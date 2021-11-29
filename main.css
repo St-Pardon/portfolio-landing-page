@@ -95,6 +95,7 @@ html{
     left: 10%;
     color: #fff;
     z-index: 2;
+    width: 80%;
 }
 #about p, #about h1, #about h3{
     text-transform: uppercase;
@@ -104,8 +105,8 @@ html{
     font-weight: 600;
 }
 #about h1{
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 4.5rem;
+    line-height: 4.5rem;
     margin-left: -5px;
     color: transparent;
     -webkit-text-stroke: 1px #fff;
@@ -122,7 +123,7 @@ html{
     }
 }
 #about h3{
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     font-weight: 500;
 }
 
@@ -138,6 +139,9 @@ html{
     text-decoration: none;
     color: #fff;
 }
+.btn-div span{
+    font-size: 0.8rem;
+}
 
 #contact{
     position: absolute;
@@ -152,4 +156,59 @@ html{
 .icon{
     font-size: 1.3rem;
     padding: 10px 3px;
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 14px;
+    }
+}
+@media screen and (max-width: 480px) {
+    html{
+        font-size: 10px;
+    }
+    #about{
+    bottom: 30%;
+
+    }
+
+    #about p{
+        font-size: 1.7rem;
+    }
+
+
+    .btn-div{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 10px;
+        
+    }
+    .btn-div a{
+        border-radius: 2px;
+        background: rgb(85, 197, 109);
+        font-size: 1.3rem;
+    }
+    .btn-div a:nth-child(2){
+        background: rgb(85, 87, 197);
+    }
+    .btn-div span{
+        font-size: 1.2rem;
+    }
+
+    #contact{
+        position: absolute;
+
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0 auto;
+        text-align: center;
+    }
+    #contact a{
+        display: inline;
+    }
+    .icon{
+        font-size: 1.8rem;
+        padding: 3px 10px;
+    }
 }
